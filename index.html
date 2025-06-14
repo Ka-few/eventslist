@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event guest list manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Event Guest List Manager</h1>
+    </header>
+    <div class="container">
+  <div class="input" id="guest-input">
+    <h2>Add Guest</h2>
+    <input type="text" class="guest-txt" size="50" placeholder="Enter guest name">
+
+    <div class="controller" id="controls">
+      <label><input type="radio" name="guest-type" value="Family"> Family</label>
+      <label><input type="radio" name="guest-type" value="Friend"> Friend</label>
+      <label><input type="radio" name="guest-type" value="Colleague"> Colleague</label>
+    </div>
+
+    <button type="submit" class="btn-submit">Submit</button>
+    <button type="button" class="btn-delete-by-name">Delete Guest</button>
+  </div>
+
+  <div class="output" id="guest-output">
+    <h2>Guest List</h2>
+    <div class="dis-output" id="diplay-box"></div>
+  </div>
+</div>
+
+   <script src="./script.js"></script> 
+</body>
+</html>
